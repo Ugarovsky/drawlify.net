@@ -1,0 +1,26 @@
+{% comment %}
+  The contents of the cart.liquid template can be found in /sections/cart-template.liquid
+{% endcomment %}
+
+{% section 'cart-template' %}
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var elements = document.getElementsByClassName('cart__submit');
+  elements[0].addEventListener('click', () => {
+      //add to cart 
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2649700751915660');
+  fbq('track', 'InitiateCheckout');
+  console.log('added initate check out);
+          })
+  
+        })
+  </script>
